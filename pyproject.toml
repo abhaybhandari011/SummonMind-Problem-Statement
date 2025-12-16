@@ -2,16 +2,20 @@
 name = "summonminds-ai"
 version = "0.1.0"
 description = "Problem Statement"
-authors = [{ name = "Abhay" }]
+authors = [
+    {name = "Abhay"}
+]
+
 readme = "README.md"
 requires-python = ">=3.12"
-package-mode = false
-
 dependencies = [
-    "fastapi==0.124.4",
-    "uvicorn==0.38.0",
-    "pydantic==2.12.5"
+    "fastapi (==0.124.4)",
+    "uvicorn (==0.38.0)",
+    "pydantic (==2.12.5)"
 ]
+
+[tool.poetry]
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
