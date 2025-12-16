@@ -1,0 +1,29 @@
+{
+  "schema": {
+    "version": 1,
+    "fields": {
+      "firstName": "string",
+      "lastName": "string",
+      "age": "number",
+      "isActive": "boolean"
+    },
+    "computed": {
+      "fullName": "{{firstName}} {{lastName}}"
+    }
+  },
+  "rules": [
+    {
+      "id": "r1",
+      "level": "field",
+      "field": "age",
+      "condition": "value >= 30",
+      "action": "validate"
+    }
+  ],
+  "data": {
+    "firstName": "Abhay",
+    "lastName": "Bhandari",
+    "age": 25,
+    "isActive": true
+  }
+}

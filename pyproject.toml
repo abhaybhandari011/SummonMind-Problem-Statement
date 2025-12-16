@@ -1,0 +1,21 @@
+[project]
+name = "summonminds-ai"
+version = "0.1.0"
+description = "Problem Statement"
+authors = [
+    {name = "Abhay"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (==0.124.4)",
+    "uvicorn (==0.38.0)",
+    "pydantic (==2.12.5)"
+]
+
+[tool.poetry]
+packages = [{include = "summonminds"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
