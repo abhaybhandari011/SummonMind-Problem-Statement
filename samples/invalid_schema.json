@@ -1,0 +1,40 @@
+{
+  "schema": {
+    "version": 1,
+    "fields": {
+      "firstName": "string",
+      "lastName": "string",
+      "age": "number",
+      "email": "string",
+      "isPremiumUser": "boolean"
+    },
+    "computed": {
+      "fullName": "{{firstName}} {{lastName}}",
+      "isAdult": "{{age}}",
+      "discountEligible": "{{isPremiumUser}}",
+      "displayLabel": "{{fullName}}"
+    }
+  },
+  "rules": [
+    {
+      "id": "AGE_001",
+      "level": "field",
+      "field": "age",
+      "action": "validate",
+      "condition": "value >= 18"
+    },
+    {
+      "id": "EMAIL_001",
+      "level": "field",
+      "field": "email",
+      "action": "validate",
+      "condition": "'@' in value"
+    }
+  ],
+  "data": {
+    "firstName": "Abhay",
+    "age": 25,
+    "email": "abhay.bhandari@gmail.com",
+    "isPremiumUser": true
+  }
+}
