@@ -1,4 +1,3 @@
-````md
 # SummonMind Backend Screening Assignment
 
 Minimal backend service to validate data against a simple schema and execute declarative validation rules.
